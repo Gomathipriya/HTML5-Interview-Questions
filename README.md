@@ -101,6 +101,19 @@ An <code>article</code> might contain a <code>section</code> at the end for read
 Difference between span and div
 ===============================
 span : output with <code>display:inline</code> <br>
-div : output with <code>display:block</code>
+div : output with <code>display:block</code> <br>
+span is used when we need our element to be displayed in a line one after another
+
+Geolocation API
+===============
+Lets the user to share the physical location with chosen website <br>
+Javascript captures lattitude and longitude and send the details to the backend server to process like showing the location in map <br>
+Can be created as follows
+<pre> var geolocation(service obj)= navigator.geolocation; </pre>
+
+Difference between prop and attr
+================================
+
+
 
 
