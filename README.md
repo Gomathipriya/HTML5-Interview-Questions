@@ -33,11 +33,13 @@ Important features of HTML5
  5. New Structural Semantics
  <pre>
     nav
-    article - self-contained composition that can logically be independently recreated outside of the page without losing it’s                         meaning. Individual blog posts or news stories
+    article - self-contained composition that can logically be independently recreated outside of the page <br> 
+              without losing it’s meaning. Individual blog posts or news stories
     section - flexible container for holding content that shares a common informational theme or purpose
     main
     header - introductory and navigational information about a section of the page
-    footer - end of a section of content and contain additional information about the section. Author’s name, copyright information,                  and related links
+    footer - end of a section of content and contain additional information about the section. Author’s name,<br>
+             copyright information,and related links
     aside - content that is only slightly related to the rest of the page.
 
 Note: There can me many header and footer inside a page eg. header in article 1 and article 2
@@ -55,13 +57,13 @@ Note: There can me many header and footer inside a page eg. header in article 1 
  
 Web workers
 ===========
-Bring multi-threading in Javascript
-Script that runs in background(ie in another thread) without the page need to wait for it to complete
-User can continue to interact with the page when the web worker is running in the background
-Utilize thread like message to achieve parallelism
-Usually used for CPU intensive task
+Bring multi-threading in Javascript <br>
+Script that runs in background(ie in another thread) without the page need to wait for it to complete <br>
+User can continue to interact with the page when the web worker is running in the background <br>
+Utilize thread like message to achieve parallelism <br>
+Usually used for CPU intensive task <br>
  
-Few Javascript object that are not accessible to HTML5 web workers are
+Few Javascript object that are not accessible to HTML5 web workers are 
  - parent object
  - window object
  - document object
@@ -72,4 +74,33 @@ Types of web workers
     - Wide browser support
     - Simply tied to the main connection
 2. Shared worker
-  
+    - Can be accessed from any script of same origin 
+    - Limited browser support
+    - Can work with multiple connection
+
+Web worker works in the below steps
+1. It should be executed on separate thread
+2. Should be hosted in separate files from the main page
+3. Worker object need to be instantiated to call them
+
+Charset
+=======
+previous: meta charset="UTF-8" <br>
+HTML5: meta http-equiv="Content-Type" content="text/html;charset=utf-8"
+
+Difference between HTML specification and browser implementation
+================================================================
+Specification provides instruction on how a browser must interpret and render such a document <br>
+A browser is said to “support” a specification if it handles valid documents according to the rules of the specification
+
+Section inside article and article inside section example
+========================================================
+A personal dashboard page might contain a <code> section</code> for social network interactions as well as a <code>section</code> for the latest news articles, the latter of which could contain several <code>article</code> elements. <br>
+An <code>article</code> might contain a <code>section</code> at the end for reader comments.
+
+Difference between span and div
+===============================
+span : output with <code>display:inline</code> <br>
+div : output with <code>display:block</code>
+
+
