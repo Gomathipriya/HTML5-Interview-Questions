@@ -113,6 +113,24 @@ Can be created as follows
 
 Difference between prop and attr
 ================================
+Both are used to get and set values of a specified property of an element attribute
+
+<pre>
+attr() - returns default value of the property
+prop() - returns the current value of the property
+</pre>
+
+Web Storage
+===========
+- Web pages can store data locally in the user browser
+- More secure and faster than cookies
+- Unlike cookies data is not included in every request, it is sent when asked for
+- Data is stored in name value pair
+- Web page can access the data stored by itself
+- Storage limit is minimum 5MB greater than that of cookie(4KB)
+
+Difference between local storage and session storage
+====================================================
 
 
 
