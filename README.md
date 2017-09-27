@@ -131,7 +131,137 @@ Web Storage
 
 Difference between local storage and session storage
 ====================================================
+<strong> Local Storage </strong>
+- Data stored is permanent
+- Doesnot expires, remains in user computer until web page delete it or the user as browser to delete it.
+- To Delete <code> localstorage.remove('key') or localstorage.clear() </code> need to be used
+- Values stored in local storage can be accessed by all the windows and tabs from same origin
+- Maximum size of local storage is 10-15 MB
 
+<strong> Session Storage</strong>
+- Same lifetime as top level window or browser tab in which the script that stored that is running
+- When the window or tab is closed then the data is deleted
+- Value stored is not shared. It will be visible to respective window or tab
+- Maximum size is 5MB
+
+Custom attribute
+================
+Starts with data- and get the value from JavaScript API or CSS
+<pre>
+div class="example" data-subject="physics" data-level="complex"
+/div
+</pre>
+
+Datetime input ctrl Vs datetime-local input ctrl
+=================================================
+Both represent date and time (year,month,day,hour,minute,second,fraction of second) encoded according to ISO 8601
+
+- Datetime - timezone set to UTC
+- datatime-local - no timezone
+
+Web Socket
+=========
+- Bi-directional for web application which operates over single socket
+- Used to reduce the over-head of http
+- When connection is established send data using send() and receive data using onMessage event handler
+<code> var websocket = new WebSocket(url,[protocal]);</code>
+
+Difference between HTML5 Application cache and browser cache
+============================================================
+- Application cache enables offline version of a web application
+- Fetch few or all the application conent like HTML,CSS,JS locally
+- Speeds up the site performance
+- Not compulsary for the user to visit the web contents to be cached
+- Done by
+<pre>
+html manifest="example.appcache"
+/html
+</pre>
+
+Manifest file
+=============
+Basically a text file that dictates what need to be cached and what not when application cache is enabled
+
+eg: <pre>
+CACHE MANIFEST
+CACHE
+NETWORK
+FALLBACK
+
+CACHE MANIFEST
+/decorate.css
+/work.js
+/amazing.jpg
+</pre>
+
+Lazy loading
+============
+- Design pattern commonly Used
+- Loading code only when the user needs
+
+Fieldset
+=========
+- Groups the related form elements
+- It draws a box around the related elements
+- It must start with <code> legend </code> tag to define the title
+- Makes the form easier to understand
+
+Server Sent Events
+==================
+Bi-directional communication channel prior to websocket
+1. Event source interface: Allows client to recieve push notification from server as DOM events
+2. Event stream: Data format to deliver individual updates
+
+Web SQL Database
+=================
+- Used to manipulate client side DB
+- Stores data in client side not server side
+
+Ways to reduce page load time
+==============================
+- Reduce image size
+- Remove unnecessary widgets
+- Put CSS at top and script references at the bottom - Reduce look up , minimize redirection and caching
+
+Optimize a website
+==================
+- Minimize http request
+- Use Content Delivery Network
+- Put style sheet at the top
+- Put scripts at bottom
+- Avoid css expression
+- External JS and CSS
+- Minify JS and CSS
+- Avoid redirects
+- Remove duplicate scripts
+- Preload components
+- Reduce number of DOM elements
+- No 404
+- Minimize DOM Access
+- smart event handlers
+- avoid filters
+- optimize image
+- Dont scale images in HTML
+
+Difference between standard mode and quirks mode
+================================================
+Quirks mode 
+- Default compactibility mode
+- Vary from browser to browser
+- Lack of consistency in appearance
+
+Indexed DB
+===========
+- Used to store large amount of data in browser
+- More efficient than webstorage
+- Stores data as key value pair
+- Asynchronous
+- Non Relational
+
+Micro Data
+==========
+- Used to nest the metadata within an existing content on the page
+- Mechanism that allows machine readable data to be embed in the html in an easy to write manner
 
 
 
