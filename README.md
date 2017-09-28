@@ -263,5 +263,36 @@ Micro Data
 - Used to nest the metadata within an existing content on the page
 - Mechanism that allows machine readable data to be embed in the html in an easy to write manner
 
+Flex box
+========
+
+- Not a single property but a set of properties on the parent element and their children
+- Parent - Container - eg div called flex container
+- Children - elements called flex items
+
+- Main axis: The main axis is the default flow direction for the flex items.
+- Main-start and Main-end: The main-start and main-end are the starting point and ending point for the flex items to flow in the flex container.
+- Cross axis: The cross axis is perpendicular to the main axis.
+- Cross-start and Cross-end: The flex items are placed from the start at the cross-start point and ends at cross-end point.
+- Main size: The flex items width or height in the main dimension is the main size of the flexbox.
+- Cross size: The flex items width or height in the cross dimension is the cross size of the flexbox.
+
+Difference between SVG and Canvas
+=================================
+
+SVG : 
+- Language for describing 2D graphics. 
+- Having Multiple Graphics Elements including (Circle, Rect, Boxes, Path, Line, Polygon etc.)
+- XML based and Resolution independent
+- Every element is available with SVG DOM. Javascript event handlers can be attached.
+- Each shape is remembered as an object. If attribute is changed the shape is rerendered
+- Slow in rendering when manipulating complex scenarios
+	  
+Canvas: 
+- Allows to draw 2D graphics on the fly
+- Resolution Dependent 
+- Rendered pixel by pixel.No manipulation using Event Handling due to pixel based interaction.
+- If its position need to be changed entire page need to be re-rendered. As the browser wil not remember this as an object
+- Better in Performance.	Better choice for games
 
 
